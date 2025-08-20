@@ -1,81 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
   <script defer src="script.js"></script>
 </head>
 <body>
-  <!-- ===== HEADER ===== -->
+  <!-- NAVIGATION -->
   <header>
     <nav>
-      <h1 class="logo">My Portfolio</h1>
+      <h1 class="logo"><a href="index.html">My Portfolio</a></h1>
       <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
+        <li><a href="about.html">About</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- ===== HERO SECTION ===== -->
-  <section id="home" class="hero">
+  <!-- HERO SECTION -->
+  <section class="hero">
     <div class="hero-content">
-      <img src="assets/profile.jpg" alt="Profile picture" class="profile-pic">
+      <img src="assets/profile.jpg" alt="Profile Picture" class="profile-pic">
       <h2>Hi, I'm [Your Name]</h2>
-      <p>I'm a [Your Role — e.g., Mechanical/Software Engineer, Developer, Designer]</p>
-      <a href="#projects" class="btn">See My Work</a>
+      <p>I design and build cool things with creativity and engineering.</p>
     </div>
   </section>
 
-  <!-- ===== ABOUT ===== -->
-  <section id="about" class="about">
-    <h2>About Me</h2>
-    <p>
-      Write a short bio here about your background, skills, and what drives you.
-      Keep it personal and professional.
-    </p>
-  </section>
-
-  <!-- ===== PROJECTS ===== -->
+  <!-- PROJECTS OVERVIEW -->
   <section id="projects" class="projects">
-    <h2>Projects</h2>
+    <h2>My Work</h2>
     <div class="project-grid">
-      <div class="project-card">
-        <img src="assets/project1.png" alt="Project 1">
+      <a href="project1.html" class="project-card">
+        <img src="assets/project1-large.jpg" alt="Project 1">
         <h3>Project One</h3>
-        <p>Short description of the project.</p>
-      </div>
-      <div class="project-card">
-        <img src="assets/project2.png" alt="Project 2">
+      </a>
+      <a href="project2.html" class="project-card">
+        <img src="assets/project2-large.jpg" alt="Project 2">
         <h3>Project Two</h3>
-        <p>Short description of the project.</p>
-      </div>
-      <div class="project-card">
-        <img src="assets/project3.png" alt="Project 3">
+      </a>
+      <a href="project3.html" class="project-card">
+        <img src="assets/project3-large.jpg" alt="Project 3">
         <h3>Project Three</h3>
-        <p>Short description of the project.</p>
-      </div>
+      </a>
     </div>
   </section>
+  
 
-  <!-- ===== CONTACT ===== -->
-  <section id="contact" class="contact">
-    <h2>Contact Me</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit" class="btn">Send</button>
-    </form>
-  </section>
-
-  <!-- ===== FOOTER ===== -->
+  <!-- FOOTER -->
   <footer>
-    <p>&copy; 2025 [Your Name]. Built with ❤️</p>
+    <p>&copy; 2025 [Your Name]</p>
   </footer>
 </body>
 </html>
